@@ -32,7 +32,8 @@ public class DequeueFromBeginning
             System.out.println("List is Empty");
         }
         while (current != null)  {
-            System.out.println(current.data + " ");
+
+            System.out.print(current.data + "->");
             current = current.next;
         }
     }
@@ -45,7 +46,6 @@ public class DequeueFromBeginning
                 current = head;
             }
         }
-
     }
     public static void main(String[] args) {
         DequeueFromBeginning operationQueue = new DequeueFromBeginning();
