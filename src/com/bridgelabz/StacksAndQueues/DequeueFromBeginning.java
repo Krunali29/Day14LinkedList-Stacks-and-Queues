@@ -13,9 +13,9 @@ public class DequeueFromBeginning
             next = null;
         }
     }
-    //Append data One By One
-    public void append(int data)  {
-        Node newNode = new Node(data);
+    //Append datas One By One
+    public void append(int datas)  {
+        Node newNode = new Node(datas);
         if(head == null)  {
             head = newNode;
             tail = newNode;
@@ -32,6 +32,7 @@ public class DequeueFromBeginning
             System.out.println("List is Empty");
         }
         while (current != null)  {
+
             System.out.print(current.data + "->");
             current = current.next;
         }
@@ -45,7 +46,6 @@ public class DequeueFromBeginning
                 current = head;
             }
         }
-
     }
     public static void main(String[] args) {
         DequeueFromBeginning operationQueue = new DequeueFromBeginning();
