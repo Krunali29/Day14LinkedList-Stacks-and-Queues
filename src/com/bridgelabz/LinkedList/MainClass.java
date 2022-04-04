@@ -12,7 +12,10 @@ public class MainClass
         list.add(70);
         list.insertAfter(30,40);
         list.display();
-        Node searchedNode = list.search(30);
+        list.delete(40);
+        list.display();
+        list.size();
+        Node searchedNode = list.search(40);
         if (searchedNode == null)
             System.out.println("\nData Not Found");
         else
