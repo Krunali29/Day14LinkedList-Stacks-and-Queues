@@ -15,7 +15,8 @@ public class ToCreateAQueue
         }
     }
     // Append data One By One
-    public void append(int data) {
+    public void append(int data)
+    {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -35,6 +36,7 @@ public class ToCreateAQueue
             System.out.print(current.data + "->");
             current = current.next;
         }
+
     }
     public static void main(String[] args) {
         ToCreateAQueue operationQueue = new ToCreateAQueue();
