@@ -10,7 +10,11 @@ public class MainClass
         list.add(56);
         list.add(30);
         list.add(70);
-        list.popLast();
         list.display();
+        Node searchedNode = list.search(30);
+        if (searchedNode == null)
+            System.out.println("\nData Not Found");
+        else
+            System.out.println("\nData Found");
     }
 }
