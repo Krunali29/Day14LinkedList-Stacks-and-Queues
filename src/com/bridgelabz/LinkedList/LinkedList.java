@@ -51,4 +51,15 @@ public class LinkedList {
     public void pop(){
         head = head.next;
     }
+    public void popLast(){
+        Node temp = head;
+        Node prevNode = null;
+        while (temp.next != null)
+        {
+            prevNode = temp;
+            temp = temp.next;
+        }
+        assert prevNode != null;
+        prevNode.next = null;
+    }
 }
