@@ -7,9 +7,9 @@ public class MainClass
     {
 
         LinkedList list = new LinkedList();
-        list.push(56);
-        list.push(30);
-        list.push(70);
+        list.add(56);
+        list.add(70);
+        list.insertAfter(56,30);
         list.display();
     }
 }

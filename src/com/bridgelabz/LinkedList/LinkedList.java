@@ -30,4 +30,22 @@ public class LinkedList {
             head = newNode;
         }
     }
+    public void insertAfter(int prevData,int data){
+        Node newNode = new Node(data);
+        Node searchedNode = this.search(prevData);
+        if( searchedNode != null){
+            newNode.next = searchedNode.next;
+            searchedNode.next = newNode;
+            //newNode.next = tempNode;
+        }
+    }
+    public Node search(int data){
+        Node temp = head;
+        while(temp != null){
+            if(temp.key == data)
+                return temp;
+            temp = temp.next;
+        }
+        return null;
+    }
 }
