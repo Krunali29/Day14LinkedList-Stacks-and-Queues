@@ -10,7 +10,7 @@ public class MainClass
         list.add(56);
         list.add(30);
         list.add(70);
-        list.pop();
+        list.popLast();
         list.display();
     }
 }
