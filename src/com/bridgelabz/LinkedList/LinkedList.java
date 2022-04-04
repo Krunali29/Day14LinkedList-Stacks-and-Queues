@@ -48,4 +48,7 @@ public class LinkedList {
         }
         return null;
     }
+    public void pop(){
+        head = head.next;
+    }
 }
